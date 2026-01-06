@@ -8,33 +8,44 @@
 </head>
 <body>
 
-  <header>
-    <h1>⚡ QuickExport</h1>
-    <p>Un visuel → tous les formats. Instantanément.</p>
-  </header>
+<header>
+  <h1>⚡ QuickExport</h1>
+  <p>Choisis les formats et exporte instantanément</p>
+</header>
 
-  <main>
+<main>
+  <section class="upload-section">
     <input type="file" id="upload" accept="image/*" />
+  </section>
 
-    <div class="previews">
-      <canvas id="igPost"></canvas>
-      <canvas id="igStory"></canvas>
-      <canvas id="twitter"></canvas>
-    </div>
+  <section class="format-selection">
+    <h2>Sélectionner les formats :</h2>
+    <label><input type="checkbox" id="cbIgPost" checked> Instagram Post</label>
+    <label><input type="checkbox" id="cbIgStory" checked> Instagram Story</label>
+    <label><input type="checkbox" id="cbTwitter" checked> Twitter / LinkedIn</label>
+    <label><input type="checkbox" id="cbYoutube" checked> YouTube Thumbnail</label>
+  </section>
 
-    <button id="exportBtn">Exporter tous les formats</button>
+  <section class="previews">
+    <canvas id="igPost"></canvas>
+    <canvas id="igStory"></canvas>
+    <canvas id="twitter"></canvas>
+    <canvas id="youtube"></canvas>
+  </section>
 
-    <section class="pay">
-      <h2>Accès Pro – 3$/mois</h2>
-      <p>Paiement sécurisé via Payoneer</p>
-      <a href="https://payoneer.com" target="_blank" class="pay-btn">
-        S’abonner – 3$/mois
-      </a>
-    </section>
-  </main>
+  <button id="exportBtn">Exporter sélection</button>
 
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
-  <script src="app.js"></script>
+  <section class="pay">
+    <h2>Accès Pro – 3$/mois</h2>
+    <p>Paiement sécurisé via Payoneer – accès immédiat</p>
+    <a href="TON_LIEN_PAYONEER_ICI" target="_blank" class="pay-btn">
+      S’abonner – 3$/mois
+    </a>
+  </section>
+</main>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+<script src="app.js"></script>
 </body>
 </html>
+
