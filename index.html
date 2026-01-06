@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <title>QuickExport – Multi Formats</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header>
+    <h1>⚡ QuickExport</h1>
+    <p>Un visuel → tous les formats. Instantanément.</p>
+  </header>
+
+  <main>
+    <input type="file" id="upload" accept="image/*" />
+
+    <div class="previews">
+      <canvas id="igPost"></canvas>
+      <canvas id="igStory"></canvas>
+      <canvas id="twitter"></canvas>
+    </div>
+
+    <button id="exportBtn">Exporter tous les formats</button>
+
+    <section class="pay">
+      <h2>Accès Pro – 3$/mois</h2>
+      <p>Paiement sécurisé via Payoneer</p>
+      <a href="https://payoneer.com" target="_blank" class="pay-btn">
+        S’abonner – 3$/mois
+      </a>
+    </section>
+  </main>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.10.1/jszip.min.js"></script>
+  <script src="app.js"></script>
+
+</body>
+</html>
